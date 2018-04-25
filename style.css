@@ -1,0 +1,192 @@
+
+body,
+html {
+  width: 100%;
+  height: 100%; 
+  align-content: center;
+  -webkit-align-content: center;
+}
+
+/*Fuckoff@1 mail chimp*/
+
+body {
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+
+hr {
+  max-width: 65px;
+  border-width: 3px;
+  border-color: #F05F44; 
+}
+
+.faded {
+  color: rgb(255, 224, 0);
+}
+
+header.startup {
+  background-position: center;
+  background-image: url("curtains.jpg");
+  background-size: cover;
+  height: 300%;
+}s
+
+header.startup hr {
+  margin-top: 200px;
+  margin-bottom: 30px; 
+}
+
+header.startup h1 {
+  font-size: 2rem; 
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 300px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem; 
+}
+
+.btn-primary, .guest {
+  background-color: #F05F44;
+  border-color: #F05F44; }
+
+.btn-primary:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 5px;
+  cursor: pointer;
+}
+
+.basketBtn{
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 300px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: #C80700;
+  border-color: #C80700; }
+}
+
+.guest {
+  color: white;
+  background-color: #F05F44;
+  border-color: #F05F44; }
+}
+.guest:hover {
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  border-width: 5px;
+  cursor: pointer;
+}
+
+.card-img-top, .card-body {
+  background-color: black;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.form2 {
+  align-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+.myTable{
+  text-align: right;
+}
+
+input, label {
+  margin-top: 2em;
+
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#regSubmit {
+    background-color: #4CAF50;
+    color: white;0
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#regSubmit:hover {
+    background-color: #45a049;
+}
+
+.linkbutton{
+  color: #868e96;
+}
+
+.linkbutton:hover{
+  color: #CCCDC3;
+}
+
+.dropdown-menu {
+  background-color: #343A40;#
+  border: none !important;
+}
+
+.show {
+  border: none;
+}
