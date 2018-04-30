@@ -3,8 +3,8 @@
 <html>
 <head>
 
-  <!-- https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/html_example_cart/ -->
-
+  <!-- PayPal Buttons: https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/html_example_cart/ -->
+  <!--  Disbale links in Nav Bar: https://css-tricks.com/how-to-disable-links/-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -30,31 +30,31 @@
         	<!-- Nav bar links/list -->
 	        <div class="collapse navbar-collapse" id="navbarResponsive">
 	        	<ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="item_Selection.html">Order</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="login.html">
-                  Account
-                  <span class="caret"></span>
-                </a> 
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="linkbutton" href="Login.html">Login</a>
-                  </li>
-                  <li>
-                    <a class="linkbutton" href="register.html">Register</a>
-                  </li>
-                </ul>
-               </li>
-		            <li class="nav-item">
-		           		<a class="nav-link" href="#">Contact</a>
-		            </li>
+	              <li class="nav-item active">
+	                <a class="nav-link" href="index.html">Home
+	                  <span class="sr-only">(current)</span>
+	                </a>
+	              </li>
+	              <li class="nav-item">
+	                <a class="nav-link" href="item_Selection.html">Order</a>
+	              </li>
+	              <li class="nav-item dropdown">
+	                <a class="dropdown-toggle nav-link isDisabled" data-toggle="dropdown" href=""> <!--  href="login.html" -->
+	                  Account
+	                  <span class="caret"></span>
+	                </a> 
+	                <ul class="dropdown-menu">
+	                  <li>
+	                    <a class="linkbutton isDisabled" href="">Login</a> <!--  href="login.html"  Login.html-->
+	                  </li>
+	                  <li>
+	                    <a class="linkbutton isDisabled" href="">Register</a> <!--  href="register.html" -->
+	                  </li>
+	                </ul>
+	               </li>
+			        <li class="nav-item isDisabled">
+			        	<a class="nav-link" href="#">Contact</a>
+			        </li>
 		        </ul>
 	        </div>
        	</div>
@@ -69,20 +69,18 @@
         <div class="row">
       		<div class="col-lg-12 my-auto col-sm-12 portfolio-item">
       			<label for="country">Screen: </label>
-			    <select id="country" name="country" style="background-color: grey; opacity: 0.4">
+			    <select id="country" name="country" style="background-color: #808080c2; opacity: 0.6; color: white">
+			      <option value="Select Screen">Select Screen</option>
 			      <option value="Screen 1">Screen 1</option>
 			      <option value="Screen 2">Screen 2</option>
 			      <option value="Screen 3">Screen 3</option>
 			    </select>
-
-			    
           	</div>
         </div>
-
         <div class="row">
       		<div class="col-lg-12 my-auto col-sm-12 portfolio-item">
       			<label for="seatNumber">Seat Number: </label>
-			    <input type="text" name="seatNumber" placeholder="Seat Number" style=" background-color: grey; opacity: 0.4; color: white">
+			    <input type="text" name="seatNumber" placeholder="Enter your Seat Number" style=" background-color: #808080c2; opacity: 0.6; color: white">
 			</div>
 		</div>
 <!--  -->
@@ -117,7 +115,7 @@
                     <input type="hidden" name="currency_code" value="EUR">
 
                     <input type="hidden" name="on1" value="Size">
-                    <label for="os1">Popcorn</label>
+                    <label class="u" for="os1"><h5>Popcorn</h5></label>
                     <select name="os1" id="os1">
                         <option value="Select a size">-- Select a size --</option>
                         <option value="Small">Small - €3.95 </option>
@@ -157,7 +155,7 @@
                       <input type="hidden" name="currency_code" value="EUR">
 
                       <input type="hidden" name="on0" value="Flavor">
-                      <h6>Drinks</h6>
+                      <h5 class="u">Drinks</h5>
                       <label for="os0">Flavour</label>
                           <select name="os0" id="os0">
                               <option value="Select a flavour">-- Select a flavour --</option>
@@ -206,7 +204,7 @@
                     <input type="hidden" name="currency_code" value="EUR">
 
                     <input type="hidden" name="on1" value="Size">
-                    <label for="os1">Nachos</label>
+                    <label for="os1" class="u"><h5>Nachos</h5></label>
                     <select name="os1" id="os1">
                         <option value="Select a size">-- Select a size --</option>
                         <option value="Small">Small - €3.95 </option>
@@ -243,7 +241,7 @@
                     <input type="hidden" name="currency_code" value="EUR">
 
                     <input type="hidden" name="on1" value="Size">
-                    <label for="os1">Sweets</label>
+                    <label class="u" for="os1"><h5>Sweets</h5></label>
                     <select name="os1" id="os1">
                         <option value="Select a size">-- Select a Sweet --</option>
                         <option value="Buttons">Buttons - €5.00 </option>
@@ -251,7 +249,6 @@
                         <option value="Randoms">Randoms - €5.00 </option>
                         <option value="ColaBottles">Cola Bottles - €5.00 </option>
                         <option value="PicknMix">Pick 'n' Mix - €5.00 </option>
-
                     </select>
 
                     <input type="hidden" name="option_index" value="1">
@@ -300,7 +297,7 @@
     </header>
 
     <footer>
-        <p class="text-left text-white" style="margin-bottom: 0;">Copyright &copy; It's PopcornTime 2018</p>
+        <p class="text-left text-white" style="margin-bottom: 0;">Copyright &copy; It's PopcornTime! 2018</p>
     </footer>
 
 <!-- Footer -->

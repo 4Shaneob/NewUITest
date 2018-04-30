@@ -1,0 +1,263 @@
+<!-- New UI -->
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- PayPal Buttons: https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/html_example_cart/ -->
+  <!--  Disbale links in Nav Bar: https://css-tricks.com/how-to-disable-links/-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+    <title>Order</title>
+   
+  </head>
+
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    	<div class="container">
+			<!--<a class="navbar-brand" href="#">It's PopcornTime!</a>
+ -->       	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 0px">
+            	<span class="navbar-toggler-icon"></span>
+        	</button>
+        	<!-- Nav bar links/list -->
+	        <div class="collapse navbar-collapse" id="navbarResponsive">
+	        	<ul class="navbar-nav ml-auto">
+	              <li class="nav-item active">
+	                <a class="nav-link" href="index.html">Home
+	                  <span class="sr-only">(current)</span>
+	                </a>
+	              </li>
+	              <li class="nav-item">
+	                <a class="nav-link" href="item_Selection.html">Order</a>
+	              </li>
+	              <li class="nav-item dropdown">
+	                <a class="dropdown-toggle nav-link isDisabled" data-toggle="dropdown" href=""> <!--  href="login.html" -->
+	                  Account
+	                  <span class="caret"></span>
+	                </a> 
+	                <ul class="dropdown-menu">
+	                  <li>
+	                    <a class="linkbutton isDisabled" href="">Login</a> <!--  href="login.html"  Login.html-->
+	                  </li>
+	                  <li>
+	                    <a class="linkbutton isDisabled" href="">Register</a> <!--  href="register.html" -->
+	                  </li>
+	                </ul>
+	               </li>
+			        <li class="nav-item isDisabled">
+			        	<a class="nav-link" href="#">Contact</a>
+			        </li>
+		        </ul>
+	        </div>
+       	</div>
+      </nav>
+<!-- END OF NAV -->
+
+<!-- Header/Main Body with Picture -->
+    <header class="startup text-center text-white d-flex ">
+      <div class="container my-auto">
+      	<div class="column" style="align-content: center!important">
+<!-- SEAT AND SCREEN -->
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <!-- Identify your business so that you can collect the payments. -->
+          <input type="hidden" name="business" value="kin@kinskards.com">
+
+          <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+          <input type="hidden" name="cmd" value="_cart">
+          <input type="hidden" name="add" value="1">
+
+          <!-- Specify details about the item that buyers will purchase. -->
+      <!--     <input type="hidden" name="item_name" value="Birthday - Cake and Candle">
+          <input type="hidden" name="amount" value="3.95">
+          <input type="hidden" name="currency_code" value="USD"> -->
+
+          <!-- Provide a drop-down menu option field, without prices. -->
+         <!--  <input type="hidden" name="on0" value="Color">
+          <label for="os0">Color scheme</label>
+            <select >
+              <option value="Select a color scheme">-- Select a color scheme --</option>
+              <option value="Blue">Blue</option>
+              <option value="Pink">Pink</option>
+              <option value="Yellow">Yellow</option>
+          </select> -->
+        
+<!-- maniplating paypal code -->
+          <div class="row">
+            <div class="col-lg-12 my-auto col-sm-12 portfolio-item">
+
+                <!-- Specify a PayPal Shopping Cart Add to Cart button. -->
+                <input type="hidden" name="cmd" value="_cart">
+                <input type="hidden" name="add" value="1">
+
+                <!-- Specify details about the item that buyers will purchase. -->
+                <input type="hidden" name="item_name" value="Screen">
+                <input type="hidden" name="amount" value="1">
+                <input type="hidden" name="currency_code" value="EUR">
+
+                <!-- Provide a drop-down menu option field, without prices. -->
+                <input type="hidden" name="on0" value="Screen">
+                <label for="on1">Screen: </label>
+                <select style="background-color: #808080c2; opacity: 0.6; color: white" >
+                  <option value="Select Screen">Select Screen</option>
+                  <option value="Screen 1">Screen 1</option>
+                  <option value="Screen 2">Screen 2</option>
+                  <option value="Screen 3">Screen 3</option>
+                </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 my-auto col-sm-12 portfolio-item">
+
+              <!-- Specify an Add to Cart button. --><!-- 
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="add" value="1"> -->
+
+              <!-- Specify details about the item that buyers will purchase. --><!-- 
+              <input type="hidden" name="on2" value="seatNumber">
+              <input type="hidden" name="amount" value="1">
+              <input type="hidden" name="currency_code" value="EUR"> -->
+
+              <!-- <label for="on2">Seat Number: </label>
+              <input name="on2" id="seatNumber" maxlength="4" type="text" placeholder="Enter your Seat Number" style=" background-color: #808080c2; opacity: 0.6; color: white"> -->
+            </div>
+          </div>
+
+          <!-- Display the payment button. -->
+          <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" alt="Add to Cart">
+          <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+
+        </form>
+
+<!-- http://czetsuya-tech.blogspot.ie/2010/10/paypal-add-multiple-item-in-cart-for.html -->
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="upload" value="1">
+<input type="hidden" name="business" value="czetsuya@gmail.com">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="return" value="">
+ 
+<input type="text" name="item_name_1" value="Macbook Pro">
+<input type="hidden" name="item_number_1" value="001">
+<input type="hidden" name="amount_1" value="10">
+<input type="hidden" name="quantity_1" value="1">
+ 
+<input type="text" name="item_name_2" value="Asus i7">
+<input type="hidden" name="item_number_2" value="002">
+<input type="hidden" name="amount_2" value="20">
+<input type="hidden" name="quantity_2" value="1">
+ 
+<!-- Display the payment button. -->
+          <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" alt="Add to Cart">
+          <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+</form>
+<!-- https://stackoverflow.com/questions/1761803/submitting-multiple-items-to-paypal-cart-at-once-with-php -->
+        <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="upload" value="1">
+<input type="hidden" name="business" value="email@email.com">
+<input type="hidden" name="item_name_1" value="Item #1">
+<input type="hidden" name="amount_1" value="1.00">
+<input type="hidden" name="item_name_2" value="Item #2">
+<input type="hidden" name="amount_2" value="2.00">
+<input type="submit" value="PayPal">
+</form>  -->
+
+<!-- https://developer.paypal.com/docs/classic/button-manager/integration-guide/ -->
+<!-- <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="19218">
+<table>
+<tr><td><input type="hidden" name="on0" value="Color">Color</td></tr><tr><td><select name="os0">
+<option value="Red">Red $10.00
+<option value="Blue">Blue $8.00
+<option value="Green">Green $12.00
+</select> </td></tr>
+<tr><td><input type="hidden" name="on1" value="Size">Size</td></tr><tr><td><select name="os1">
+<option value="Small">Small
+<option value="Large">Large
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_addtocart_120x26.png" alt="Add to Cart" name="submit">
+<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form> -->
+
+
+<!-- https://www.paypal-community.com/t5/Carts/Add-Multiple-Products-to-Cart-along-with-Product-Option-s/td-p/1345560 -->
+<!-- <form action="https://sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top" id="buynow">
+   <input type="hidden" name="business" value="my[at]business.com">
+
+   <input type="hidden" name="cmd" value="_cart">
+   <input type="hidden" name="upload" value="1">
+   <input type="hidden" name="currency_code" value="GBP">
+
+          <input type="button" value="-" class="qtyminus btn btn-default" field="quantity_1">
+          <input type="text" name="quantity_1" value="1" class="qty form-control">
+          <input type="button" value="+" class="qtyplus btn btn-default" field="quantity_1">
+         <input type="hidden" name="item_name_1" value="5 GBP voucher" id="item_name_1">
+         <input type="hidden" name="amount_1" value="5.00" id="item_amount_1">
+
+          <input type="button" value="-" class="qtyminus btn btn-default" field="quantity_2">
+          <input type="text" name="quantity_2" value="0" class="qty form-control">
+          <input type="button" value="+" class="qtyplus btn btn-default" field="quantity_2">
+         <input type="hidden" name="item_name_2" value="10 GBP voucher" id="item_name_2">
+         <input type="hidden" name="amount_2" value="10.00" id="item_amount_2">
+
+   <input type="submit" value="Buy with PayPal">
+   <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form> -->
+
+<!-- https://stackoverflow.com/questions/3308898/paying-for-multiple-items-at-once-via-paypal -->
+<!-- <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="business" value="paypal@email.com">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="item_name" value="PHP Book">
+<input type="hidden" name="item_number" value="PB123">
+<input type="hidden" name="amount" value="25">
+<input type="hidden" name="currency_code" value="USD">
+<input type='hidden' name='cancel_return' value='http://www.example.com/cancel.php'>
+<input type='hidden' name='return' value='http://www.example.com/success.php'>
+<input type="image" name="submit"
+src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_addtocart_120x26.png"
+alt="Add to Cart">
+<img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif">
+</form>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="upload" value="1">
+<input type="hidden" name="business" value="youremail@mail.com">
+<input type="hidden" name="currency_code" value="USD">
+
+<input type="hidden" name="item_name_1" value="beach ball">
+<input type="hidden" name="amount_1" value="15">
+
+<input type="hidden" name="item_name_2" value="towel">
+<input type="hidden" name="amount_2" value="20">
+
+<input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" alt="Add to Cart">
+
+</form> -->
+
+
+<!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- My own stylesheet -->
+    <link href="style.css" rel="stylesheet">
+    <!-- MyScript file -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

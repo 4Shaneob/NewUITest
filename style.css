@@ -85,6 +85,13 @@ header.startup h1 {
   cursor: pointer;
 }
 
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.2;
+  text-decoration: none;
+}
+
 .card-img-top, .card-body {
   background-color: black;
 }
@@ -112,7 +119,10 @@ header.startup h1 {
 
 input, label {
   margin-top: 2em;
+}
 
+.u {
+  text-decoration: underline;
 }
 
 input[type=text], select {
@@ -172,6 +182,11 @@ input[type=password], select {
 
 #regSubmit:hover {
     background-color: #45a049;
+}
+
+::placeholder {
+    color: white;
+    opacity: 2;
 }
 
 .linkbutton{
