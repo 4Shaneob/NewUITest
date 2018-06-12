@@ -23,44 +23,47 @@
   </head>
 
   <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <!-- <a class="navbar-brand" href="#">It's PopcornTime!</a> -->
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 0px">
             <span class="navbar-toggler-icon"></span>
           </button>
-           <div class="collapse navbar-collapse" id="navbarResponsive">
+           <!-- Nav bar links/list -->
+          <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="item_Selection.html">Order</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="login.html">
-                  Account
-                  <span class="caret"></span>
-                </a> 
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="linkbutton" href="Login.html">Login</a>
-                  </li>
-                  <li>
-                    <a class="linkbutton" href="register.html">Register</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="item_Selection.html">Order</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-toggle nav-link isDisabled" data-toggle="dropdown" href=""> <!--  href="login.html" -->
+                    Account
+                    <span class="caret"></span>
+                  </a> 
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="linkbutton isDisabled" href="">Login</a> <!--  href="login.html"  Login.html-->
+                    </li>
+                    <li>
+                      <a class="linkbutton isDisabled" href="">Register</a> <!--  href="register.html" -->
+                    </li>
+                  </ul>
+                 </li>
+              <li class="nav-item isDisabled">
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
+<!-- END OF NAV -->
+<!-- HEADER?BODY? -->
     <header class="startup text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
@@ -91,10 +94,10 @@
                     <div class="clear">
                       <!-- <input class="guest btn btn-primary btn-xl button" type="submit" value="Login" src="Login.html" name="subscribe" id="mc-embedded-subscribe"> --> 
                       
-                      <a class="guest btn btn-primary btn-xl button" href="Login.html" target="">Login</a>
-                      <a class="guest btn btn-primary btn-xl button" href="item_Selection.html" target="">Guest</a>
+                      <a class="guest btn btn-primary btn-xl button isDisabled" href="Login.html" target="">Login</a>
+                      <a class="guest btn btn-primary btn-xl button isDisabled" href="item_Selection.html" target="">Guest</a>
                       <br/>
-                      <a href="register.html" target="">Register</a>
+                      <a class="isDisabled" href="register.html" target="">Register</a>
                     </div>
                   </div>
               </form>
@@ -105,14 +108,13 @@
         </div>
       </div>
     </header>
-
+<!-- END OF HEADER?BODY? -->
     <!-- Footer -->
     <footer>
         <p class="text-left text-white" style="margin-bottom: 0;">Copyright &copy; It's PopcornTime 2018</p>
     </footer>
 
-
-    <!-- Scripts -->
+<!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
