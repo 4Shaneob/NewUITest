@@ -1,207 +1,72 @@
-
-body,
-html {
-  width: 100%;
-  height: 100%; 
-  align-content: center;
-  -webkit-align-content: center;
+@import http://fonts.googleapis.com/css?family=Raleway;
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+#main {
+width:960px;
+margin:50px auto;
+font-family:raleway
 }
-
-/*Fuckoff@1 mail chimp*/
-
-body {
-  background-color: black;
-  font-family: 'Montserrat', sans-serif;
- 
+span {
+color:red
 }
-
+h2 {
+background-color:#FEFFED;
+text-align:center;
+border-radius:10px 10px 0 0;
+margin:-10px -40px;
+padding:15px
+}
 hr {
-  max-width: 65px;
-  border-width: 3px;
-  border-color: #F05F44; 
+border:0;
+border-bottom:1px solid #ccc;
+margin:10px -40px;
+margin-bottom:30px
 }
-
-.faded {
-  color: rgb(255, 224, 0);
+#login {
+width:300px;
+float:left;
+border-radius:10px;
+font-family:raleway;
+border:2px solid #ccc;
+padding:10px 40px 25px;
+margin-top:70px
 }
-
-header.startup {
-  background-position: center;
-  background-image: url("curtains.jpg");
-  background-size: cover;
-  height: 150%;
-}s
-
-header.startup hr {
-  margin-top: 200px;
-  margin-bottom: 30px; 
+input[type=text],input[type=password] {
+width:99.5%;
+padding:10px;
+margin-top:8px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:16px;
+font-family:raleway
 }
-
-header.startup h1 {
-  font-size: 2rem; 
+input[type=submit] {
+width:100%;
+background-color:#FFBC00;
+color:#fff;
+border:2px solid #FFCB00;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:15px
 }
-
-.btn {
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 300px;
-  font-family: 'Montserrat', sans-serif;
+#profile {
+padding:50px;
+border:1px dashed grey;
+font-size:20px;
+background-color:#DCE6F7
 }
-
-.btn-xl {
-  padding: 1rem 2rem; 
+#logout {
+float:right;
+padding:5px;
+border:dashed 1px gray
 }
-
-.btn-primary, .guest {
-  background-color: #F05F44;
-  border-color: #F05F44; }
-
-.btn-primary:hover {
-  background-color: #ee4b08;
-  border-color: #ee4b08;
-  border-width: 5px;
-  cursor: pointer;
+a {
+text-decoration:none;
+color:#6495ed
 }
-
-.basketBtn{
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 300px;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-  background-color: #C80700;
-  border-color: #C80700; }
-}
-
-.guest {
-  color: white;
-  background-color: #F05F44;
-  border-color: #F05F44; }
-}
-.guest:hover {
-  background-color: #ee4b08;
-  border-color: #ee4b08;
-  border-width: 5px;
-  cursor: pointer;
-}
-
-.isDisabled {
-  color: currentColor;
-  cursor: not-allowed;
-  opacity: 0.2;
-  text-decoration: none;
-}
-
-.card-img-top, .card-body {
-  background-color: black;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-}
-
-.form2 {
-  align-content: center;
-  align-items: center;
-  max-width: 400px;
-  margin: auto;
-}
-
-.myTable{
-  text-align: right;
-}
-
-input, label {
-  margin-top: 2em;
-}
-
-.u {
-  text-decoration: underline;
-}
-
-input[type=text], select {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=email], select {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=text], select {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=number], select {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=password], select {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-#regSubmit {
-    background-color: #4CAF50;
-    color: white;0
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#regSubmit:hover {
-    background-color: #45a049;
-}
-
-::placeholder {
-    color: white;
-    opacity: 2;
-}
-
-.linkbutton{
-  color: #868e96;
-}
-
-.linkbutton:hover{
-  color: #CCCDC3;
-}
-
-.dropdown-menu {
-  background-color: #343A40;#
-  border: none !important;
-}
-
-.show {
-  border: none;
+i {
+color:#6495ed
 }
