@@ -1,3 +1,10 @@
+<?php
+  include('login.php'); // Includes Login Script
+
+  if(isset($_SESSION['login_user'])){
+    header("location:item_Selection.php");
+  }
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -74,29 +81,32 @@
       			<br>
       		</div>
           <div class="col-lg-12 my-auto">
-          	<form class="form2" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <!-- action="/action_page.php" onsubmit="return validateForm()" -->
+          	<form class="form2" name="myForm" method="post">
           		<h1>Login</h1>
           		<h3>Please Log in</h3>
-				<table class="myTable">
-					<tr>
-						<td><label>Email: </label></td>
-						<td><input type="text" name="email"></td>
-					</tr>
-					<br>
-					<tr>
-					</tr>
-					<br>
-					<tr>
-						<td><label>Password: </label></td>
-						<td><input type="Password" name="password"></td>
-					</tr>
-					<br>
-					<tr>
-						<td></td>
-						<td><input type="submit" value="Submit"></td>
-					</tr>
-				</table>
-			</form>
+      				<table class="myTable">
+      					<tr>
+      						<td><label>Email: </label></td>
+                  <!-- added bits from the login.php, id, removed email from name -->
+      						<td><input id="name" type="text" name="username" placeholder="Username"></td>
+      					</tr>
+      					<br>
+      					<tr>
+      					</tr>
+      					<br>
+      					<tr>
+      						<td><label>Password: </label></td>
+      						<td><input type="Password" name="password"></td>
+      					</tr>
+      					<br>
+      					<tr>
+      						<td></td>
+      						<td><input type="submit" name="submit" value="Submit"></td>
+      					</tr>
+      				</table>
+              <span><?php echo $error; ?></span>
+      			</form>
           </div>
         </div>
       </div>
