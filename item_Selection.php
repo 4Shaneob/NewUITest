@@ -126,7 +126,7 @@
 	          <div class="card h-50" style="height: 100%!important; color: white; background-color: transparent; border: none; padding: 0px">
 <!--  https://www.paypal.com/cgi-bin/webscr-->
                   <form target=".self" action="https://sandbox.paypal.com/cgi-bin/webscr" method="post"> 
-                    <input type="hidden" name="business" value="nomorecollege@woo.com">
+                    <input type="hidden" name="business" value="Cinema@movies.com">
 
                     <input type="hidden" name="cmd" value="_cart">
                     <input type="hidden" name="add" value="1">
@@ -164,7 +164,7 @@
 	            <!-- <a href="#"><img class="card-img-top" src="Pictures\BW-Drink2.png" alt=""></a> -->
 	            <!--  https://www.paypal.com/cgi-bin/webscr-->
                    	<form target=".self" action="https://sandbox.paypal.com/cgi-bin/webscr" method="post">
-                      <input type="hidden" name="business" value="nomorecollege@woo.com">
+                      <input type="hidden" name="business" value="Cinema@movies.com">
 
                       <input type="hidden" name="cmd" value="_cart">
                       <input type="hidden" name="add" value="1">
@@ -213,7 +213,7 @@
 	            <!-- <a href="#"><img class="card-img-top" src="Pictures\BW-Drink2.png" alt=""></a> -->
 	            <!--  https://www.paypal.com/cgi-bin/webscr-->
                   <form target=".self" action="https://sandbox.paypal.com/cgi-bin/webscr" method="post">
-                    <input type="hidden" name="business" value="nomorecollege@woo.com">
+                    <input type="hidden" name="business" value="Cinema@movies.com">
 
                     <input type="hidden" name="cmd" value="_cart">
                     <input type="hidden" name="add" value="1">
@@ -248,7 +248,7 @@
 		            <!-- <a href="#"><img class="card-img-top" src="Pictures\BW-Drink2.png" alt=""></a> -->
 		            <!--   https://www.paypal.com/cgi-bin/webscr-->
                   <form target=".self" action="https://sandbox.paypal.com/cgi-bin/webscr" method="post">
-                    <input type="hidden" name="business" value="nomorecollege@woo.com">
+                    <input type="hidden" name="business" value="Cinema@movies.com">
 
                     <input type="hidden" name="cmd" value="_cart">
                     <input type="hidden" name="add" value="1">
@@ -287,7 +287,7 @@
 <!--  https://www.paypal.com/cgi-bin/webscr-->
                 <form target="_self" action="https://sandbox.paypal.com/cgi-bin/webscr" method="post">
                       <!-- Identify your business so that you can collect the payments. -->
-                      <input type="hidden" name="business" value="nomorecollege@woo.com">
+                      <input type="hidden" name="business" value="Cinema@movies.com">
 
                       <!-- Specify a PayPal shopping cart View Cart button. -->
                       <input type="hidden" name="cmd" value="_cart">
@@ -359,4 +359,4 @@
   </body>
 </html>
 
-<!-- Atempted to make nomorecollege@woo.com a paypal sandbox business account, but after logging in test@popcorn.com, it got stuck on loading. Deleted woo.com sandbox account. -->
+<!-- Atempted to make Cinema@movies.com a paypal sandbox business account, but after logging in test@popcorn.com, it got stuck on loading. Deleted woo.com sandbox account. -->
