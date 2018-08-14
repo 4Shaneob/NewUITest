@@ -129,7 +129,7 @@
                     <input type="hidden" name="business" value="Cinema@movies.com">
 
                     <input type="hidden" name="cmd" value="_cart">
-                    <input type="hidden" name="add" value="1">
+7                    <input type="hidden" name="add" value="1">
 
                     <input type="hidden" name="item_name" value="Popcorn">
                     <input type="hidden" name="currency_code" value="EUR">
