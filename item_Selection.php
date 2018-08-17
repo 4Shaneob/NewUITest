@@ -124,7 +124,7 @@
         <div class="row">
 	        <div class="col-lg-12 col-sm-12 portfolio-item">
 	          <div class="card h-50" style="height: 100%!important; color: white; background-color: transparent; border: none; padding: 0px">
-<!--  https://www.paypal.com/cgi-bin/webscr-->
+<!-- Code for REAL paypal functionality  https://www.paypal.com/cgi-bin/webscr-->
                   <form target=".self" action="https://sandbox.paypal.com/cgi-bin/webscr" method="post"> 
                     <input type="hidden" name="business" value="Cinema@movies.com">
 
@@ -238,7 +238,7 @@
 
                     <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" alt="Add to Cart">
                     <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-                </form>
+                  </form>
 	          </div>
 	        </div>
 	    </div>

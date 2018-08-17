@@ -35,9 +35,7 @@
 	        <div class="collapse navbar-collapse" id="navbarResponsive">
 	        	<ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
-                  <span class="sr-only">(current)</span>
-                </a>
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="item_Selection.php">Order</a>
@@ -92,8 +90,7 @@
       						<td><input id="name" type="text" name="username" placeholder="Username"></td>
       					</tr>
       					<br>
-      					<tr>
-      					</tr>
+      					<tr></tr>
       					<br>
       					<tr>
       						<td><label>Password: </label></td>
