@@ -124,7 +124,7 @@
         <div class="row">
 	        <div class="col-lg-12 col-sm-12 portfolio-item">
 	          <div class="card h-50" style="height: 100%!important; color: white; background-color: transparent; border: none; padding: 0px">
-<!-- Code for REAL paypal functionality  https://www.paypal.com/cgi-bin/webscr-->
+<!-- Code for REAL paypal functionality:  https://www.paypal.com/cgi-bin/webscr-->
                   <form target=".self" action="https://sandbox.paypal.com/cgi-bin/webscr" method="post"> 
                     <input type="hidden" name="business" value="Cinema@movies.com">
 
