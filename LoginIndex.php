@@ -38,24 +38,19 @@
                 <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="item_Selection.php">Order</a>
+                <a class="nav-link" href="item_Selection.html">Order</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="login.html">
-                  Account
-                  <span class="caret"></span>
-                </a> 
+                <a class="dropdown-toggle nav-link " data-toggle="dropdown" href=""> <!--  href="login.html" -->Account<span class="caret"></span></a> 
                 <ul class="dropdown-menu">
+                  <li><a class="linkbutton nav-link" href="LoginIndex.php">Login</a><!--  href="login.html"  Login.html--></li>
                   <li>
-                    <a class="linkbutton" href="Login.html">Login</a>
-                  </li>
-                  <li>
-                    <a class="linkbutton" href="register.html">Register</a>
+                    <a class="linkbutton nav-link isDisabled" href="register.html">Register</a>
                   </li>
                 </ul>
               </li>
 		            <li class="nav-item">
-		           		<a class="nav-link" href="#">Contact</a>
+		           		<a class="nav-link" href="logout.php">Logout</a>
 		            </li>
 		        </ul>
 	        </div>
