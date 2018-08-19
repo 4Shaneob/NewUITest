@@ -42,10 +42,12 @@
 	              </li>
 	              <li class="nav-item dropdown">
                   <a class="dropdown-toggle nav-link " data-toggle="dropdown" href=""> <!--  href="login.html" -->Account<span class="caret"></span></a> 
-	                <ul class="dropdown-menu">
-	                  <li><a class="linkbutton nav-link" href="LoginIndex.php">Login</a><!--  href="login.html"  Login.html--></li>
-	                  <li><a class="linkbutton isDisabled nav-link" href="">Register</a> <!--  href="register.html" --></li>
-	                </ul>
+	                <ul style="background-color: #343A40 !important;" class="dropdown-menu dropLink">
+                    <li><a style="background-color: #343A40 !important;" class="linkbutton nav-link dropLink" href="LoginIndex.php">Login</a>   <!--  href="login.html"  Login.html--></li>
+                    <li>
+                      <a style="background-color: #343A40 !important;" class="linkbutton nav-link dropLink isDisabled" href="register.html">Register</a>
+                    </li>
+                  </ul>
 	               </li>
   			        <li class="nav-item">
                   <a class="nav-link " href="logout.php">Logout</a>

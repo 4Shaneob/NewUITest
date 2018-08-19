@@ -11,7 +11,6 @@ if (isset($_POST['submit'])){
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 
-
 		//Establishing connection with server by passing server_name, user_id and password as a parameter
 		$connection = mysqli_connect("localhost", "root", "");
 		// localhost to localhost:2000 and back,
@@ -19,7 +18,6 @@ if (isset($_POST['submit'])){
 		//To Protect from MySQLi injection
 		$username = stripslashes($username);
 		$password = stripslashes($password);
-
 		// $username = mysqli_real_escape_string('$username');
 		// $password = mysqli_real_escape_string('$password');
 // echo $username;

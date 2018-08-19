@@ -194,12 +194,21 @@ input[type=password], select {
 }
 
 .dropdown-menu {
-  background-color: #343A40;
+  background-color: #343A40 !important;
+  border: none !important;
+}
+.dropdown-menu2{
+  background-color: #343A40 !important;
   border: none !important;
 }
 
 .show {
   border: none;
+}
+
+.dropLink {
+  background-color: #343A40 !important;
+  border: none !important;
 }
 
 /*############################################################### PHP CSS Starts ###########################################################*/
